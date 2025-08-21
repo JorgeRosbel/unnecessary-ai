@@ -57,3 +57,11 @@ if (res) {
 }
 
 ```
+
+| Parameter         | Type         | Required | Description                                                              |
+| ----------------- | ------------ | -------- | ------------------------------------------------------------------------ |
+| `target`          | `any[]`      | ✅        | Array of items to sort (objects, numbers, anything).                     |
+| `criteria`        | `string`     | ✅        | Natural-language sorting rules, can be as complex or absurd as you like. |
+| `api_key`         | `string`     | ❌        | Optional API key for the service.                                        |
+| `model`           | `TModel`     | ❌        | Optional AI model to use (e.g., `"gpt-4.1"`).                            |
+| `response_format` | `ZodTypeAny` | ✅        | Zod schema describing the structure of the expected sorted output.       |
