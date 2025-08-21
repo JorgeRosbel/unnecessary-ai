@@ -1,7 +1,7 @@
 {
   "name": "unnecessary-ai",
   "version": "0.0.1",
-  "description": "",
+  "description": "Unnecessary-AI: Sort anything by any absurd, hilarious, or ridiculously specific criterion",
   "exports": {
     ".": {
       "import": "./dist/index.mjs",
