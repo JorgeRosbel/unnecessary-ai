@@ -65,3 +65,140 @@ if (res) {
 | `api_key`         | `string`     | ❌        | Optional. If not provided, the function reads `OPENAI_API_KEY` environment variable. |
 | `model`           | `TModel`     | ❌        | Optional AI model to use (e.g., `"gpt-4.1"`).                                        |
 | `response_format` | `ZodTypeAny` | ✅        | Zod schema describing the structure of the expected sorted output.                   |
+
+
+# Real-World Use Cases
+
+While `unnecessary-ai` started as a satirical take on overengineering, it turns out AI-powered sorting solves genuine problems that traditional algorithms can't handle. Here are practical scenarios where subjective, multi-criteria sorting actually makes sense:
+
+## E-Commerce & Product Ranking
+
+### Personalized Product Discovery
+```javascript
+const products = [/* array of products */];
+await overengineer({
+  target: products,
+  criteria: "Sort by purchase likelihood for a busy parent who values convenience over price, tends to buy eco-friendly products, and shops primarily on mobile during evening hours"
+});
+```
+
+### Dynamic Inventory Prioritization
+```javascript
+await overengineer({
+  target: inventory,
+  criteria: "Prioritize items to promote considering current trends, seasonal demand, profit margins, and clearance urgency"
+});
+```
+
+## Content Curation & Social Media
+
+### Feed Optimization
+```javascript
+await overengineer({
+  target: posts,
+  criteria: "Sort by engagement potential considering user's past interactions, current mood indicators, trending topics, and time of day"
+});
+```
+
+### Content Planning
+```javascript
+await overengineer({
+  target: contentIdeas,
+  criteria: "Prioritize content that balances viral potential, brand alignment, production feasibility, and strategic business goals"
+});
+```
+
+## Human Resources & Recruitment
+
+### Resume Screening
+```javascript
+await overengineer({
+  target: candidates,
+  criteria: "Rank by technical skills + growth potential + diversity considerations, weighing soft skills and unconventional backgrounds positively"
+});
+```
+
+### Team Assignment
+```javascript
+await overengineer({
+  target: employees,
+  criteria: "Sort by suitability for this project considering expertise, workload, learning opportunities, and team chemistry"
+});
+```
+
+## Investment & Business Strategy
+
+### Startup Deal Flow
+```javascript
+await overengineer({
+  target: pitches,
+  criteria: "Rank by investment potential combining market size, team strength, product-market fit signals, timing, and that indefinable 'founder magic' factor"
+});
+```
+
+### Market Opportunity Assessment
+```javascript
+await overengineer({
+  target: markets,
+  criteria: "Prioritize expansion opportunities balancing market size, competition density, regulatory complexity, and strategic fit with our core competencies"
+});
+```
+
+## Creative & Design Work
+
+### Design Portfolio Curation
+```javascript
+await overengineer({
+  target: designs,
+  criteria: "Arrange by visual impact for a luxury brand presentation, considering elegance, innovation, brand alignment, and emotional resonance"
+});
+```
+
+### Campaign Asset Prioritization
+```javascript
+await overengineer({
+  target: creativeAssets,
+  criteria: "Order by effectiveness for Q4 holiday campaign targeting millennials, emphasizing authenticity over polish and emotional connection over product features"
+});
+```
+
+## Research & Analysis
+
+### Literature Review
+```javascript
+await overengineer({
+  target: papers,
+  criteria: "Sort research papers by relevance to climate policy implementation, weighing recent findings, methodological rigor, real-world applicability, and citation influence"
+});
+```
+
+### Data Source Prioritization
+```javascript
+await overengineer({
+  target: dataSources,
+  criteria: "Rank data sources by reliability + completeness + update frequency + cost efficiency for building a market intelligence dashboard"
+});
+```
+
+## Why Traditional Sorting Falls Short
+
+These scenarios share common characteristics that make rule-based sorting inadequate:
+
+- **Multiple subjective criteria** that resist quantification
+- **Context-dependent weights** that change based on situation
+- **Semantic understanding** required to interpret nuanced requirements  
+- **Cultural and temporal factors** that influence relative importance
+- **Intuitive "gut feeling" decisions** that humans make but struggle to codify
+
+## The AI Advantage
+
+By describing your sorting criteria in natural language, you can:
+- **Combine quantitative and qualitative factors** seamlessly
+- **Adapt to changing contexts** without rewriting algorithms
+- **Incorporate domain expertise** that's hard to formalize
+- **Handle edge cases** through semantic understanding
+- **Prototype complex decision systems** rapidly
+
+---
+
+*Remember: With great AI power comes great responsibility. Use `unnecessary-ai` wisely, and always validate results against your business logic and ethical guidelines.*
