@@ -1,4 +1,4 @@
-import { ZodTypeAny } from 'zod';
+import { ZodType } from 'zod';
 
 export type TModel =
   | 'gpt-4.1'
@@ -17,5 +17,5 @@ export interface RequestModel {
   criteria: string;
   api_key?: string;
   model?: TModel;
-  response_format: ZodTypeAny;
+  response_format: ZodType<any, any, any>;
 }

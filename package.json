@@ -12,6 +12,7 @@
   "types": "./dist/index.d.ts",
   "scripts": {
     "build": "tsup",
+    "build:dev": "npm run build && npm link",
     "prepare": "husky",
     "format": "prettier --write \"**/*.{js,ts}\"",
     "check": "prettier --check \"**/*.{js,ts}\"",
